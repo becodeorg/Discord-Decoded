@@ -65,4 +65,9 @@
 	Roles / Permissions
 	Custom emojis
 	Audit log
+	Adding bots
+		-warning
+		-permissions / security
+	
+#### 9. FAQ
 	
