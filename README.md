@@ -68,6 +68,8 @@
 	Adding bots
 		-warning
 		-permissions / security
+		-commands
+		-making bots
 	
 #### 9. FAQ
 	
