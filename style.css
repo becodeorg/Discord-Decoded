@@ -1,0 +1,132 @@
+.bottomSpace{
+    margin-bottom: 20px;
+}
+
+.leftResize{
+    object-fit: cover;
+    object-position: left;
+    width: auto;
+    height: auto;
+}
+
+.centerResize{
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+    height: auto;
+}
+
+body{
+    background: #202225;
+    color: #f8f8ff;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+}
+
+#overview{
+    padding: 20px;
+}
+
+p{
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+a{
+    color: #7289da;
+    transition: 0.2s;
+}
+
+a:hover{
+    color: #f8f8ff;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    margin: 50px 0;
+}
+
+h2{
+    background: #202225;
+    padding: 20px 50px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+section{
+    border-bottom: 1px solid #4f545c;
+    padding-bottom: 90px!important;
+    margin-bottom: 40px;
+}
+
+.container{
+    background: #2f3136;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.bigList, .list, .smallList{
+    list-style: none;
+}
+
+.list{
+    background: #36393f;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.smallList{
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid #7289da;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#faq .list{
+    margin-bottom: 0;
+}
+
+#faq .smallList{
+    margin-bottom: 50px;
+}
+
+
+
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background: #4f545c;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.oops{
+    margin-top: 0;
+}
+
+#top:hover{
+    background: #202225;
+    border: 1px solid #f8f8ff;
+}
+
+.love{
+    font-size: 0.8em;
+    color: #4f545c;
+    text-align: center;
+}
+
+hr{
+    border-color: #4f545c;
+}
+
+.row{
+    padding: 20px;
+}
