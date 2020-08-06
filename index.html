@@ -7,121 +7,217 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div class="sideBar">
+    <h6>Overview</h6>
+    <h6>1. Getting started</h6>
+    <a href="#gettingStarted">Browser Vs. Application</a><br>
+    <a href="#install">Installation</a><br>
+    <ul class="menuList">
+        <li><a href="https://discord.com/api/download?platform=linux&format=deb">Linux deb</a></li>
+        <li><a href="https://discord.com/api/download?platform=linux&format=tar.gz">Linux tar.gz</a></li>
+        <li><a href="https://discord.com/api/download?platform=win">Windows</a></li>
+        <li><a href="https://discord.com/api/download?platform=osx">Mac</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.discord">Android</a></li>
+        <li><a href="https://itunes.apple.com/us/app/discord-chat-for-games/id985746746">iOS</a></li>
+    </ul><br>
+    <a href="https://discord.com/register" target="_blank">Registering</a><br>
+    <a href="#login">Logging in</a><br>
+    <h6>2. What's where</h6>
+    <a href="#whatWhere">Messages</a><br>
+    <a href="#whereServers">Servers</a><br>
+    <a href="#whereChannels">Channels</a><br>
+    <a href="#whereFriends">Friends</a><br>
+    <a href="#whereProfile">Profile and Settings</a><br>
+    <h6>3. Settings</h6>
+    <a href="#settings">Microphone / Audio / Camera setup</a><br>
+    <a href="#profileSettings">Profile Settings</a><br>
+    <ul class="menuList">
+        <li><a href="#profileSettings">Profile picture</a></li>
+        <li><a href="#profileSettings">Email and Username</a></li>
+        <li><a href="#appearance">Discord appearance</a></li>
+        <li><a href="#language">Language</a></li>
+        <li><a href="#status">Status message</a></li>
+    </ul><br>
+    <h6>4. Friends</h6>
+    <a href="#friends">Adding</a><br>
+    <a href="#">Removing</a><br>
+    <a href="#">Blocking</a><br>
+    <h6>5. Servers</h6>
+    <a href="#servers">Joining a server</a><br>
+    <a href="#">Inviting to a server</a><br>
+    <a href="#">Navigating servers</a><br>
+    <a href="#">Nicknaming a server</a><br>
+    <a href="#">Changing your nickname on a server</a><br>
+    <a href="#">Grouping servers</a><br>
+    <h6>6. Communication</h6>
+    <a href="#communication">Private communication</a><br>
+    <ul class="menuList">
+        <li><a href="#">Calling</a></li>
+        <li><a href="#">Messaging</a></li>
+        <li><a href="#">Streaming screen / video</a></li>
+    </ul><br>
+    <a href="#">Server communication</a><br>
+    <ul class="menuList">
+        <li><a href="#">Text channels</a></li>
+        <li><a href="#">Voice channels</a></li>
+        <li><a href="#">Mentioning</a></li>
+        <li><a href="#">Streaming screen / video</a></li>
+        <li><a href="#">Joining a livestream</a></li>
+        <li><a href="#">Muting / deafening</a></li>
+    </ul><br>
+    <a href="#">Messaging tricks</a><br>
+    <ul class="menuList">
+        <li><a href="#">Emojis</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Attachments</a></li>
+        <li><a href="#">Pinning</a></li>
+        <li><a href="#">Searching</a></li>
+        <li><a href="#">Inbox</a></li>
+    </ul><br>
+    <h6>7. Notifications</h6>
+    <a href="#notifications">General notifications</a><br>
+    <a href="#">Server notifications</a><br>
+    <h6>8. Privacy settings</h6>
+    <a href="#privacy">Messaging</a><br>
+    <a href="#">Friends</a><br>
+    <a href="#">Data</a><br>
+    <h6>9. Server administration</h6>
+    <a href="#serverAdmin">Making a server</a><br>
+    <a href="#">General configuration</a><br>
+    <a href="#">Inviting to a server</a><br>
+    <a href="#">Creating channels</a><br>
+    <a href="#">Roles / Permissions</a><br>
+    <a href="#">Audit log</a><br>
+    <a href="#">Custom emojis</a><br>
+    <a href="#">Adding bots</a><br>
+    <ul class="menuList">
+        <li><a href="#">Warning</a></li>
+        <li><a href="#">Permissions / Security</a></li>
+        <li><a href="#">Commands</a></li>
+        <li><a href="#">Making bots</a></li>
+    </ul><br>
+    <h6>10. <a href="#faq">FAQ</a></h6>
+</div>
+<div class="content">
+    <h2 class="bigTitle">Discord Decoded</h2>
     <div class="container bottomSpace">
         <!-- INTRO ----------------------------------------------------------------->
         <section id="start" class="row">
-            <h2 class="oops">Discord Decoded</h2>
-            <p class="oops col-md-6"><a href="https://discord.com/new" target="_blank">Discord</a> is an online communication tool similar to programs such as Skype or TeamSpeak, or professional communications platforms like Slack. It supports video calls, voice chat, and text, allowing users to get in touch however they please. In this manual I'll try to cover everything you possibly need in order to use it. If you have any questions after checking out the manual and the <a href="#faq">FAQ</a> feel free to <a href="mailto:tim.broos@becode.org?subject=Discord Decoded">send me a mail</a> on the address <a href="mailto:tim.broos@becode.org?subject=Discord Decoded">tim.broos@becode.org</a> with the subject "Discord Decoded".</p>
-            <img class="col-md-6 leftResize" src="img/overview.jpg" alt="example of the discord interface">
+            <p class="oops col-lg-6 colFix"><a href="https://discord.com/new" target="_blank">Discord</a> is an <span class="emphasis">online communication tool</span> similar to programs such as Skype or TeamSpeak, or professional communications platforms like Slack. It supports <span class="emphasis">video calls, voice chat, and text</span>, allowing users to get in touch however they please. In this manual I'll try to cover <span class="emphasis">everything you possibly need</span> in order to use it. If you have any <span class="emphasis">questions</span> after checking out the manual and the <a href="#faq">FAQ</a> feel free to <a href="mailto:tim.broos@becode.org?subject=Discord Decoded">send me a mail</a> on the address <a href="mailto:tim.broos@becode.org?subject=Discord Decoded">tim.broos@becode.org</a> with the subject <span class="emphasis">"Discord Decoded"</span>.</p>
+            <img class="col-lg-6 colFix leftResize" src="img/overview.jpg" alt="example of the discord interface">
         </section>
         <!-- END INTRO ----------------------------------------------------------------->
 
         <!-- OVERVIEW ----------------------------------------------------------------->
         <section id="overview">
-            <h2 class="bottomSpace">Overview</h2>
+            <h2 class="bigSpace">Overview</h2>
             <h5>1. Getting started</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#gettingStarted">Browser Vs. Application</a></li>
-                    <li><a href="#install">Installation</a></li>
-                    <ul class="smallList">
-                        <li><a href="https://discord.com/api/download?platform=linux&format=deb">Linux deb</a></li>
-                        <li><a href="https://discord.com/api/download?platform=linux&format=tar.gz">Linux tar.gz</a></li>
-                        <li><a href="https://discord.com/api/download?platform=win">Windows</a></li>
-                        <li><a href="https://discord.com/api/download?platform=osx">Mac</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.discord">Android</a></li>
-                        <li><a href="https://itunes.apple.com/us/app/discord-chat-for-games/id985746746">iOS</a></li>
-                    </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#gettingStarted">Browser Vs. Application</a></li>
+                <li><a href="#install">Installation</a></li>
+                <ul class="smallList">
+                    <li><a href="https://discord.com/api/download?platform=linux&format=deb">Linux deb</a></li>
+                    <li><a href="https://discord.com/api/download?platform=linux&format=tar.gz">Linux tar.gz</a></li>
+                    <li><a href="https://discord.com/api/download?platform=win">Windows</a></li>
+                    <li><a href="https://discord.com/api/download?platform=osx">Mac</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.discord">Android</a></li>
+                    <li><a href="https://itunes.apple.com/us/app/discord-chat-for-games/id985746746">iOS</a></li>
                 </ul>
+                <li><a href="https://discord.com/register" target="_blank">Registering</a></li>
+                <li><a href="#login">Logging in</a></li>
+            </ul>
             <h5>2. What's where</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#whatWhere">Messages</a></li>
-                    <li><a href="#">Servers</a></li>
-                    <li><a href="#">Members and friends</a></li>
-                    <li><a href="#">Channels</a></li>
-                    <li><a href="#">Profile</a></li>
+            <ul class="list bottomSpace">
+                <li><a href="#whatWhere">Messages</a></li>
+                <li><a href="#whereServers">Servers</a></li>
+                <ul class="smallList">
+                    <li><a href="#whereChannels">Channels</a></li>
                 </ul>
+                <li><a href="#whereFriends">Friends</a></li>
+                <li><a href="#whereProfile">Profile and Settings</a></li>
+            </ul>
             <h5>3. Settings</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#settings">Microphone / Camera setup</a></li>
-                    <li><a href="#">Profile Settings</a></li>
-                    <ul class="smallList">
-                        <li><a href="#">Profile picture</a></li>
-                        <li><a href="#">Status message</a></li>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">Discord appearance</a></li>
-                        <li><a href="#">Language</a></li>
-                    </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#settings">Microphone / Audio / Camera setup</a></li>
+                <li><a href="#profileSettings">Profile Settings</a></li>
+                <ul class="smallList">
+                    <li><a href="#profileSettings">Profile picture</a></li>
+                    <li><a href="#profileSettings">Email and Username</a></li>
+                    <li><a href="#appearance">Discord appearance</a></li>
+                    <li><a href="#language">Language</a></li>
+                    <li><a href="#status">Status message</a></li>
                 </ul>
+            </ul>
             <h5>4. Friends</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#friends">Adding</a></li>
-                    <li><a href="#">Removing</a></li>
-                    <li><a href="#">Blocking</a></li>
-                </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#friends">Adding</a></li>
+                <li><a href="#">Removing</a></li>
+                <li><a href="#">Blocking</a></li>
+            </ul>
             <h5>5. Servers</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#servers">Joining a server</a></li>
-                    <li><a href="#">Inviting to a server</a></li>
-                    <li><a href="#">Navigating servers</a></li>
-                    <li><a href="#">Nicknaming a server</a></li>
-                    <li><a href="#">Changing your nickname on a server</a></li>
-                    <li><a href="#">Grouping servers</a></li>
-                </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#servers">Joining a server</a></li>
+                <li><a href="#">Inviting to a server</a></li>
+                <li><a href="#">Navigating servers</a></li>
+                <li><a href="#">Nicknaming a server</a></li>
+                <li><a href="#">Changing your nickname on a server</a></li>
+                <li><a href="#">Grouping servers</a></li>
+            </ul>
             <h5>6. Communication</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#communication">Private communication</a></li>
-                    <ul class="smallList">
-                        <li><a href="#">Calling</a></li>
-                        <li><a href="#">Messaging</a></li>
-                        <li><a href="#">Streaming screen / video</a></li>
-                    </ul>
-                    <li><a href="#">Server communication</a></li>
-                    <ul class="smallList">
-                        <li><a href="#">Text channels</a></li>
-                        <li><a href="#">Voice channels</a></li>
-                        <li><a href="#">Mentioning</a></li>
-                        <li><a href="#">Streaming screen / video</a></li>
-                        <li><a href="#">Joining a livestream</a></li>
-                        <li><a href="#">Muting / deafening</a></li>
-                    </ul>
-                    <li><a href="#">Messaging tricks</a></li>
-                    <ul class="smallList">
-                        <li><a href="#">Emojis</a></li>
-                        <li><a href="#">Code</a></li>
-                        <li><a href="#">Attachments</a></li>
-                        <li><a href="#">Pinning</a></li>
-                        <li><a href="#">Searching</a></li>
-                        <li><a href="#">Inbox</a></li>
-                    </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#communication">Private communication</a></li>
+                <ul class="smallList">
+                    <li><a href="#">Calling</a></li>
+                    <li><a href="#">Messaging</a></li>
+                    <li><a href="#">Streaming screen / video</a></li>
                 </ul>
+                <li><a href="#">Server communication</a></li>
+                <ul class="smallList">
+                    <li><a href="#">Text channels</a></li>
+                    <li><a href="#">Voice channels</a></li>
+                    <li><a href="#">Mentioning</a></li>
+                    <li><a href="#">Streaming screen / video</a></li>
+                    <li><a href="#">Joining a livestream</a></li>
+                    <li><a href="#">Muting / deafening</a></li>
+                </ul>
+                <li><a href="#">Messaging tricks</a></li>
+                <ul class="smallList">
+                    <li><a href="#">Emojis</a></li>
+                    <li><a href="#">Code</a></li>
+                    <li><a href="#">Attachments</a></li>
+                    <li><a href="#">Pinning</a></li>
+                    <li><a href="#">Searching</a></li>
+                    <li><a href="#">Inbox</a></li>
+                </ul>
+            </ul>
             <h5>7. Notifications</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#notifications">General notifications</a></li>
-                    <li><a href="#">Server notifications</a></li>
-                </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#notifications">General notifications</a></li>
+                <li><a href="#">Server notifications</a></li>
+            </ul>
             <h5>8. Privacy settings</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#privacy">Messaging</a></li>
-                    <li><a href="#">Friends</a></li>
-                    <li><a href="#">Data</a></li>
-                </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#privacy">Messaging</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Data</a></li>
+            </ul>
             <h5>9. Server administration</h5>
-                <ul class="list bottomSpace">
-                    <li><a href="#serverAdmin">Making a server</a></li>
-                    <li><a href="#">General configuration</a></li>
-                    <li><a href="#">Inviting to a server</a></li>
-                    <li><a href="#">Creating channels</a></li>
-                    <li><a href="#">Roles / Permissions</a></li>
-                    <li><a href="#">Audit log</a></li>
-                    <li><a href="#">Custom emojis</a></li>
-                    <li><a href="#">Adding bots</a></li>
-                    <ul class="smallList">
-                        <li><a href="#">Warning</a></li>
-                        <li><a href="#">Permissions / Security</a></li>
-                        <li><a href="#">Commands</a></li>
-                        <li><a href="#">Making bots</a></li>
-                    </ul>
+            <ul class="list bottomSpace">
+                <li><a href="#serverAdmin">Making a server</a></li>
+                <li><a href="#">General configuration</a></li>
+                <li><a href="#">Inviting to a server</a></li>
+                <li><a href="#">Creating channels</a></li>
+                <li><a href="#">Roles / Permissions</a></li>
+                <li><a href="#">Audit log</a></li>
+                <li><a href="#">Custom emojis</a></li>
+                <li><a href="#">Adding bots</a></li>
+                <ul class="smallList">
+                    <li><a href="#">Warning</a></li>
+                    <li><a href="#">Permissions / Security</a></li>
+                    <li><a href="#">Commands</a></li>
+                    <li><a href="#">Making bots</a></li>
                 </ul>
+            </ul>
             <h5>10. <a href="#faq">FAQ</a></h5>
         </section>
         <!-- END OVERVIEW ----------------------------------------------------------------->
@@ -130,26 +226,79 @@
         <section id="gettingStarted" class="row">
             <h2>1. Getting started</h2>
             <h5>Browser or application?</h5>
-            <p class="list">Discord can be run as an application but also in the browser. You don't even need an account if you decide to run it in the browser. If you want to use Discord on a regular basis I do heavily recommend using the application, since you then unlock it's full potential. Some settings are not available on the browser and to optimise your notifications you'll need the application. The app can also login when you start your OS, so that will save you some time.</p>
+            <p class="list">Discord can be run as an <span class="emphasis">application</span> but also in the <span class="emphasis">browser</span>. You don't even need an account if you decide to run it in the browser. If you want to use Discord on a regular basis <span class="emphasis">I do heavily recommend using the application</span>, since you then unlock it's full potential. Some settings are <span class="emphasis">not available on the browser</span> and to optimise your notifications you'll need the application. The app can also login when you start your OS, so that will save you some time.</p>
             <h5 id="install">Installation</h5>
-            <p class="list">You can install Discord on multiple OS's but also on your smartphone or tablet. You can download and install it through <a href="https://discord.com/new/download" target="_blank">this link</a> or one of the links below depending on your OS.
-            <br><br><a href="https://discord.com/api/download?platform=linux&format=deb" target="_blank">Linux deb</a>
+            <p class="list">You can install Discord on <span class="emphasis">multiple OS's</span> but also on your <span class="emphasis">smartphone</span> or <span class="emphasis">tablet</span>. You can download and install it through <a href="https://discord.com/new/download" target="_blank">this link</a> or one of the links below depending on your OS.
+                <br><br><a href="https://discord.com/api/download?platform=linux&format=deb" target="_blank">Linux deb</a>
                 <br><a href="https://discord.com/api/download?platform=linux&format=tar.gz" target="_blank">Linux tar.gz</a>
-            <br><a href="https://discord.com/api/download?platform=win" target="_blank">Windows</a>
+                <br><a href="https://discord.com/api/download?platform=win" target="_blank">Windows</a>
                 <br><a href="https://discord.com/api/download?platform=osx" target="_blank">Mac</a>
-                <br><a href="https://play.google.com/store/apps/details?id=com.discord" target="_blank">Android</a></p>
+                <br><a href="https://play.google.com/store/apps/details?id=com.discord" target="_blank">Android</a><br><a href="https://itunes.apple.com/us/app/discord-chat-for-games/id985746746">iOS</a></p>
+            <h5 id="login">Logging in</h5>
+            <p>Now that you've installed Discord and you open it, the first thing you'll see is the <span class="emphasis">login screen</span>. It should look something like the image below. If you've already made a <span class="emphasis">Discord account</span> you'll be able to login, if you haven't you can <a href="https://discord.com/register" target="_blank">register here</a>. Try logging in!</p>
+            <img src="img/login.png" class="leftResize bigSpace" alt="discord login screen">
+            <p class="col-lg-4 colFix">If you logged in successfully you'll first see the Discord loading animation and afterwards you'll enter the application. Now it looks like this:</p>
+            <img src="img/firstView.png" class="col-lg-8 colFix leftResize bigSpace" alt="discord first view">
+            <p class="col-lg-4 colFix">Before we can start exploring all the features, you first need to <a href="#serverJoin" target="_blank">join a server</a> or <a href="#serverMake" target="_blank">make a server</a>. After you've done that you'll get a view that looks like the following image, you're now ready to explore Discord.</p>
+            <img src="img/serverJoined.png" class="col-lg-8 colFix leftResize bigSpace">
         </section>
         <!-- END GETTING STARTED ----------------------------------------------------------------->
 
         <!-- WHAT WHERE----------------------------------------------------------------->
         <section id="whatWhere" class="row">
             <h2>2. What's where</h2>
+            <h5>Messages</h5>
+            <p class="col-lg-6 colFix">Now that you're inside a server let's start exploring all the fields you'll need. Let's start with the <span class="emphasis">messages</span>. First you need to know that there's <span class="emphasis">2 ways</span> to send messages, <span class="emphasis">publicly</span> through a server or <span class="emphasis">privately</span> through a direct message.<br><br>Since you're now inside of the first server you've joined let's check out the <span class="emphasis">public messages</span>. In the image I've marked the section where you can view messages and send messages.</p>
+            <img src="img/serverMsg.png" class="col-lg-6 colFix leftResize bigSpace">
+            <p class="bigSpace">The area marked in <span style="color:red">red</span> will display <span class="emphasis">messages sent in a server</span> in a specific <a href="#channel">channel</a>. There might be <span class="emphasis">multiple channels</span> inside a server, for example a channel where announcements are made and a channel where people can chat freely.<br><br>The area marked in <span style="color:greenyellow">green</span> is the <span class="emphasis">input field for sending messages</span>. Depending on in which <a href="#channel">channel</a> you are the message will be delivered to the same one.</p>
+            <p class="col-lg-6 colFix">You can also send <span class="emphasis">private messages</span>, click on the <span class="emphasis">home</span> button in the top left to go to your <span class="emphasis">direct message list</span>. It looks like someone sent me a message just now! I got a notification and that person's profile picture has appeared in my direct messages. Click <a href="#privateMessage">here</a> if you want to learn how to start a direct message with someone privately.<br><br>You can <span class="emphasis">reply</span> to this person by <span class="emphasis">clicking their picture</span>, it will open your conversation with that person. It looks fairly similar to the server messages, but nobody except <span class="emphasis">you and the person you're talking to</span> have access to those messages.</p>
+            <img src="img/wherePm.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h5 id="whereServers">Servers</h5>
+            <p class="col-lg-6 colFix">At the moment you only have one Server but soon you might have a couple. In the area marked in <span style="color:red">red</span> in the image you'll find the server list. You can <span class="emphasis">navigate</span> from server to server by <span class="emphasis">clicking their icons</span>.</p>
+            <img src="img/whereServerList.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h5 id="whereChannels">Channels</h5>
+            <p>Each server typically has <span class="emphasis">1 voice channel and 1 text channel at least</span>, but a lot of them have <span class="emphasis">more</span>. Voice channels are meant to communicate through <span class="emphasis">voice activity</span> and text channels through <span class="emphasis">text</span>. If you want to know more about them, check out the <a href="#channel">channel</a> section. In any case, you can find them in the <span style="color:greenyellow">green</span> area on every server. Voice channels have a leading speaker 🔊 icon and text channels have a leading hashtag <span class="emphasis">#</span>.</p>
+            <img src="img/whereChannels.png" class="leftResize bigSpace">
+            <h5 id="whereFriends">Friends</h5>
+            <p class="col-lg-6 colFix">To go to your friends you have to <span class="emphasis">click</span> on the <span style="color:yellow">home</span> button and then on the <span style="color:greenyellow">friends</span> button. You'll then see your <span class="emphasis">friends list</span>, if it's empty and you want to <span class="emphasis">add some friends,</span> <a href="#">click here</a> to find out how to do that. In the <span style="color:dodgerblue">blue</span> section you can <span class="emphasis">toggle</span> between your online / pending / blocked and all friends. If you want to <span class="emphasis">find out more</span> about friends <a href="#">click here</a>.</p>
+            <img src="img/whereFriends.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h5 id="whereProfile">Profile and Settings</h5>
+            <p class="col-lg-6 colFix">To go to your profile, and all other settings for that matter, click the small <span class="emphasis">gear ⚙ icon</span> next to your profile picture in the <span class="emphasis">bottom left</span>.<br><br>From there you can change a lot of your profile settings and other settings. If you want to know more about <span class="emphasis">changing your settings</span> <a href="#settings">click here</a>.</p>
+            <img src="img/whereProfile.png" class="col-lg-6 colFix leftResize bigSpace">
         </section>
-        <!-- END WHAT WHERE ----------------------------------------------------------------->
+        <!-- END WHAT WHERE  ----------------------------------------------------------------->
 
         <!-- SETTINGS ----------------------------------------------------------------->
         <section id="settings" class="row">
             <h2>3. Settings</h2>
+            <h5>Microphone, audio and camera setup</h5>
+            <p class="col-lg-6 colFix">If you're lucky, your settings are all automatically setup for you. Sometimes however, you'll need to change your input / output / video device. If you go to your settings you'll find a category <span class="emphasis">App settings</span>. In that category you'll find a tab that says <span class="emphasis">"Voice and Video"</span>, go ahead and click on it.<br><br>Here you'll find everything you need considering your <span class="emphasis">input</span> (microphone), <span class="emphasis">output</span> (audio) and <span class="emphasis">video</span> (camera) settings.</p>
+            <img src="img/micSettings.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h6>Device configuration</h6>
+            <p class="col-lg-6 colFix">If you click the <span class="emphasis">dropdown</span> on either the input or output device, you'll get to see <span class="emphasis">all the devices available</span>. Sometimes you only have one microphone and one audio device, so then selecting that one or the <span class="emphasis">default</span> works fine.<br><br>However, sometimes you have <span class="emphasis">multiple devices</span> connected. In that case you'll have to figure out which one to choose. After you've done that and selected the device you wish to use you can move the <span class="emphasis">slider</span> below to customize <span class="emphasis">how loud</span> you want your microphone / audio device to be. After that have a little <span class="emphasis">Mic check</span>, click the "Let's Check" button.<br><br> Now that you've set up your microphone we can add some extra settings to it, those are not always necessary but it's good to know of them. There's <span class="emphasis">2 ways</span> to talk through your microphone.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/loudness.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h6>Voice activity</h6>
+            <p class="col-lg-6 colFix">The <span class="emphasis">first</span> one is the default option, through <span class="emphasis">voice activity</span>. This means that when <span class="emphasis">Discord detects</span> you are saying something it will get put through and people hear you automatically. The <span class="emphasis">sensitivity</span> of Discord detecting you is done <span class="emphasis">automatically</span> by default but you can also determine that yourself by <span class="emphasis">disabling that feature</span>. Next you'll get a green / orange bar with a <span class="emphasis">slider</span> on it. Try talking into your microphone, you'll see how loud you are. To achieve the optimal result you want to place the slider <span class="emphasis">slightly below your average talking loudness</span>. This means that noise in the background won't get through and your voice will.</p>
+            <img src="img/voiceActivity.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h6>Push to talk</h6>
+            <p class="col-lg-6 colFix"><span class="emphasis">Secondly</span> there's the <span class="emphasis">"Push to talk"</span> option. This means what it says, you'll choose a button and when you press that button people will hear you. To set this up, choose the push to talk option and afterwards <span class="emphasis">record a keybind</span> by pressing that button and when it's recording press the button you want to bind. After that use the slider next to it to determine the <span class="emphasis">release delay</span>. If you want to stop talking immediately after releasing the button you can slide it to 0 ms, if not slide to the amount of ms you want to keep being heard after releasing the button.</p>
+            <img src="img/ptt.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h6 id="cameraSettings">Camera settings</h6>
+            <p class="col-lg-6 colFix">Now that your audio and microphone are set up it's time to take a look at the <span class="emphasis">camera settings</span>. Scroll down a bit and you'll see the <span class="emphasis">Video settings</span> section. Here you can <span class="emphasis">choose which camera</span> Discord has to use and test it by pressing the <span class="emphasis" style="color:dodgerblue">blue test button</span>. Most of the time you'll only have one camera connected, but in case you have multiple connected you'll need to choose the one you want to use.</p>
+            <img src="img/euft.jpg" class="col-lg-6 colFix leftResize bigSpace">
+            <h5 id="profileSettings">Profile Settings</h5>
+            <p class="col-lg-6 colFix">To change your <span class="emphasis">profile picture, email and username</span> go inside the settings by pressing the gear ⚙ icon. Then go inside the tab <span class="emphasis">User settings</span>. Here you can press <span class="emphasis">edit</span> button. Next, you can change your <span class="emphasis">profile picture</span> by clicking on it, then you choose your new picture through your OS interface. You can also change your <span class="emphasis">email and username</span> by changing the input fields. You'll need your <span class="emphasis">password</span> to change them though. If you want to <span class="emphasis">change your password</span> you can also do that by clicking on it in the view. If you're done click <span class="emphasis">save</span> and your changes will update.</p>
+            <img src="img/changeProfile.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h6 id="appearance">Discord appearance</h6>
+            <p class="col-lg-6 colFix">In your settings, under the category <span class="emphasis">App settings</span>, you'll find a tab that says <span class="emphasis">Appearance</span>, click on it.<br><br>In this view you can choose your <span class="emphasis">theme</span> to be <span class="emphasis">Dark</span> or <span class="emphasis">Light</span>. Under the message display title, you can choose either <span class="emphasis">Cozy or Compact</span> mode. Cozy will display pictures and has more room in between messages. Compact will reduce spacing and remove profile pictures in messages.<br><br>Finally, you have the <span class="emphasis">Accessibility</span> section. There you can change the <span class="emphasis">chat font size, space between message groups and zoom level</span> by moving the sliders accordingly. Play around with them and find out what fits best for you!</p>
+            <img src="img/appearance.png" class="col-lg-6 colFix leftResize bigSpace">
+            <h6 id="language">Language</h6>
+            <h6 id="status">Status message</h6>
         </section>
         <!-- END SETTINGS ----------------------------------------------------------------->
 
@@ -194,50 +343,50 @@
             <h2>10. FAQ</h2>
             <ul class="list bottomSpace">
 
-                <li>There's some loud music / noise when I join a call, how do I turn it off?</li>
-                <ul class="smallList">
+                <li class="question">There's some loud music / noise when I join a call, how do I turn it off?</li>
+                <ul class="smallList answer">
                     <li>In the voice channel there might be a bot playing music or someone making loud noises, you can <a href="#">mute</a> it by right clicking the mute target.</li>
                 </ul>
                 <hr>
 
-                <li>How do I selectively mute notifications?</li>
-                <ul class="smallList">
+                <li class="question">How do I selectively mute notifications?</li>
+                <ul class="smallList answer">
                     <li>There's 2 types of notifications, general and server notifications. Check <a href="#">this</a> out if you want to know more about managing them.</li>
                 </ul>
                 <hr>
 
-                <li>I can't hear anybody, how come?</li>
-                <ul class="smallList">
+                <li class="question">I can't hear anybody, how come?</li>
+                <ul class="smallList answer">
                     <li>There's multiple possibilities. First <a href="#">check if you are deafened</a>. If it's the case, un-deafen yourself. If that's not the case take a look if the person you're talking to is <a href="#">muted</a>.<br><br>Finally, if you still don't hear anybody there's something wrong with either your audio levels or your settings. Try first turning your volume all the way up. If you still don't hear anything there's something wrong with your <a href="#">settings</a>.</li>
                 </ul>
                 <hr>
 
-                <li>Nobody hears me, how come?</li>
-                <ul class="smallList">
+                <li class="question">Nobody hears me, how come?</li>
+                <ul class="smallList answer">
                     <li>There's multiple possibilities. First <a href="#">check if you are muted</a>. If that's not the case take a look if the person you're talking to is <a href="#">deafened</a>. <br><br>Finally, if people still don't hear you there's something wrong with either your microphone or your settings. You can check if your mic works by visiting <a href="https://www.onlinemictest.com/" target="_blank">this</a> website and following their instructions. If your microphone works there's something wrong with your <a href="#">settings</a></li>
                 </ul>
                 <hr>
 
-                <li>How do I organise a presentation in Discord?</li>
-                <ul class="smallList">
+                <li class="question">How do I organise a presentation in Discord?</li>
+                <ul class="smallList answer">
                     <li>First of all you'll need to let your audience know where to find you. You can privately contact each one or you can <a href="#">mention a group of specific people</a>. After that you'll join a voice channel together with your audience. You'll probably want them to <a href="#">mute</a> themselves so you can present without noise in the background (unless they have a question of course).<br><br>Next, the choice is up to you as to how you wish to present. You're ready to give a presentation with your voice only if you prefer but you can also <a href="#">stream your camera</a>. What I prefer most is <a href="#">sharing my screen</a> and presenting something on my screen to the audience.</li>
                 </ul>
                 <hr>
 
-                <li>Someone called me privately but I didn't notice, can I turn on the calling sound for it?</li>
-                <ul class="smallList">
+                <li class="question">Someone called me privately but I didn't notice, can I turn on the calling sound for it?</li>
+                <ul class="smallList answer">
                     <li>Yes you can, but only if you are <a href="#">friends</a> with this person. If you're not you'll get a notification that's the same as a text message. If you are friends though you'll get a popup window when that person calls you.</li>
                 </ul>
                 <hr>
 
-                <li>My microphone is making a lot of noise, can I filter it?</li>
-                <ul class="smallList">
+                <li class="question">My microphone is making a lot of noise, can I filter it?</li>
+                <ul class="smallList answer">
                     <li>Yes you can! It's in your microphone settings. <a href="#">Change your input sensitivity</a>.</li>
                 </ul>
                 <hr>
 
-                <li>There's so many servers in my list, how do I manage them?</li>
-                <ul class="smallList">
+                <li class="question">There's so many servers in my list, how do I manage them?</li>
+                <ul class="smallList answer">
                     <li>You can <a href="#">make folders</a> and put your favourite servers together, your gaming servers, your work-related servers, etc. Just drag the server over another server / folder you want to group it with.</li>
                 </ul>
                 <hr>
@@ -249,11 +398,10 @@
             🖤 Made with love by <a href="https://github.com/Timmeahj" target="_blank">Tim</a> @ <a href="https://becode.org/" target="_blank">Becode.org</a> 🖤
         </div>
     </div>
+</div>
+
     <a id="top" href="#overview">&uarr;</a>
-    
-    <script>
-        window.alert('This project is not finished yet, feel free to leave me any feedback though at tim.broos@becode.org :-)');
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
