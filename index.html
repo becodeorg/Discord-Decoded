@@ -11,6 +11,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="overlay">Loading
+    <img src="img/whiteLogo.png" alt="discord logo" class="overlayLogo">
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</div>
+
 <div class="sideBar">
     <h6>Overview</h6>
     <h6>1. Getting started</h6>
@@ -56,8 +64,8 @@
     <h6>6. Communication</h6>
     <a href="#communication">Private communication</a><br>
     <ul class="menuList">
-        <li><a href="#privateCalling">Calling</a></li>
         <li><a href="#privateMessaging">Messaging</a></li>
+        <li><a href="#privateCalling">Calling</a></li>
         <li><a href="#privateStreaming">Streaming screen / video</a></li>
     </ul><br>
     <a href="#serverCommunication">Server communication</a><br>
@@ -103,6 +111,7 @@
     <h6>10. <a href="#faq">FAQ</a></h6>
 </div>
 <div class="content">
+    <img class="bigLogo" src="img/whiteLogo.png">
     <h2 class="bigTitle">Discord Decoded</h2>
     <div class="container bottomSpace">
         <!-- INTRO ----------------------------------------------------------------->
@@ -171,8 +180,8 @@
             <ul class="list bottomSpace">
                 <li><a href="#communication">Private communication</a></li>
                 <ul class="smallList">
-                    <li><a href="#privateCalling">Calling</a></li>
                     <li><a href="#privateMessaging">Messaging</a></li>
+                    <li><a href="#privateCalling">Calling</a></li>
                     <li><a href="#privateStreaming">Streaming screen / video</a></li>
                 </ul>
                 <li><a href="#serverCommunication">Server communication</a></li>
@@ -254,14 +263,14 @@
             <h5>Messages</h5>
             <p class="col-lg-6 colFix">Now that you're inside a server let's start exploring all the fields you'll need. Let's start with the <span class="emphasis">messages</span>. First you need to know that there's <span class="emphasis">2 ways</span> to send messages, <span class="emphasis">publicly</span> through a server or <span class="emphasis">privately</span> through a direct message.<br><br>Since you're now inside of the first server you've joined let's check out the <span class="emphasis">public messages</span>. In the image I've marked the section where you can view messages and send messages.</p>
             <img src="img/serverMsg.png" class="col-lg-6 colFix leftResize bigSpace">
-            <p class="bigSpace">The area marked in <span style="color:red">red</span> will display <span class="emphasis">messages sent in a server</span> in a specific <a href="#channel">channel</a>. There might be <span class="emphasis">multiple channels</span> inside a server, for example a channel where announcements are made and a channel where people can chat freely.<br><br>The area marked in <span style="color:greenyellow">green</span> is the <span class="emphasis">input field for sending messages</span>. Depending on in which <a href="#channel">channel</a> you are the message will be delivered to the same one.</p>
-            <p class="col-lg-6 colFix">You can also send <span class="emphasis">private messages</span>, click on the <span class="emphasis">home</span> button in the top left to go to your <span class="emphasis">direct message list</span>. It looks like someone sent me a message just now! I got a notification and that person's profile picture has appeared in my direct messages. Click <a href="#privateMessage">here</a> if you want to learn how to start a direct message with someone privately.<br><br>You can <span class="emphasis">reply</span> to this person by <span class="emphasis">clicking their picture</span>, it will open your conversation with that person. It looks fairly similar to the server messages, but nobody except <span class="emphasis">you and the person you're talking to</span> have access to those messages.</p>
+            <p class="bigSpace">The area marked in <span style="color:red">red</span> will display <span class="emphasis">messages sent in a server</span> in a specific <a href="#textChannels">channel</a>. There might be <span class="emphasis">multiple channels</span> inside a server, for example a channel where announcements are made and a channel where people can chat freely.<br><br>The area marked in <span style="color:greenyellow">green</span> is the <span class="emphasis">input field for sending messages</span>. Depending on in which <a href="#textChannels">channel</a> you are the message will be delivered to the same one.</p>
+            <p class="col-lg-6 colFix">You can also send <span class="emphasis">private messages</span>, click on the <span class="emphasis">home</span> button in the top left to go to your <span class="emphasis">direct message list</span>. It looks like someone sent me a message just now! I got a notification and that person's profile picture has appeared in my direct messages. Click <a href="#privateMessaging">here</a> if you want to learn how to start a direct message with someone privately.<br><br>You can <span class="emphasis">reply</span> to this person by <span class="emphasis">clicking their picture</span>, it will open your conversation with that person. It looks fairly similar to the server messages, but nobody except <span class="emphasis">you and the person you're talking to</span> have access to those messages.</p>
             <img src="img/wherePm.png" class="col-lg-6 colFix leftResize bigSpace">
             <h5 id="whereServers">Servers</h5>
             <p class="col-lg-6 colFix">At the moment you only have one Server but soon you might have a couple. In the area marked in <span style="color:red">red</span> in the image you'll find the server list. You can <a href="#navigatingServer">navigate</a> from server to server by <span class="emphasis">clicking their icons</span>.<br><br>In the area marked in <span style="color:greenyellow">green</span> you'll find the <span class="emphasis">members list</span>. This lists <span class="emphasis">everyone that has access</span> to the server.</p>
             <img src="img/whereServerList.png" class="col-lg-6 colFix leftResize bigSpace">
             <h5 id="whereChannels">Channels</h5>
-            <p>Each server typically has <span class="emphasis">1 voice channel and 1 text channel at least</span>, but a lot of them have <span class="emphasis">more</span>. Voice channels are meant to communicate through <span class="emphasis">voice activity</span> and text channels through <span class="emphasis">text</span>. If you want to know more about them, check out the <a href="#channel">channel</a> section. In any case, you can find them in the <span style="color:greenyellow">green</span> area on every server. Voice channels have a leading speaker 🔊 icon and text channels have a leading hashtag <span class="emphasis">#</span>.</p>
+            <p>Each server typically has <span class="emphasis">1 voice channel and 1 text channel at least</span>, but a lot of them have <span class="emphasis">more</span>. Voice channels are meant to communicate through <span class="emphasis">voice activity</span> and text channels through <span class="emphasis">text</span>. If you want to know more about them, check out the <a href="#textChannels">channel</a> section. In any case, you can find them in the <span style="color:greenyellow">green</span> area on every server. Voice channels have a leading speaker 🔊 icon and text channels have a leading hashtag <span class="emphasis">#</span>.</p>
             <img src="img/whereChannels.png" class="leftResize col-lg-12 colFix bigSpace">
             <h5 id="whereFriends">Friends</h5>
             <p class="col-lg-6 colFix">To go to your friends you have to <span class="emphasis">click</span> on the <span style="color:yellow">home</span> button and then on the <span style="color:greenyellow">friends</span> button. You'll then see your <span class="emphasis">friends list</span>, if it's empty and you want to <span class="emphasis">add some friends,</span> <a href="#adding">click here</a> to find out how to do that. In the <span style="color:dodgerblue">blue</span> section you can <span class="emphasis">toggle</span> between your online / pending / blocked and all friends. If you want to <span class="emphasis">find out more</span> about friends <a href="#friends">click here</a>.</p>
@@ -354,6 +363,7 @@
         </section>
         <!-- END FRIENDS ----------------------------------------------------------------->
 
+
         <!-- SERVERS ----------------------------------------------------------------->
         <section id="servers" class="row">
             <h2>5. Servers</h2>
@@ -407,20 +417,96 @@
         <section id="communication" class="row">
             <h2>6. Communication</h2>
             <h5>Private Communication</h5>
-            <h5 id="privateCalling">Calling</h5>
+            <p class="col-lg-6 colFix">Before you can start a private conversation with someone you'll need to either be <span class="emphasis">friends</span> or share a <span class="emphasis">mutual server</span>. If you want to chat with someone that you don't share a server with, <a href="#adding">add that person to your friend list</a>.<br><br> Before you can <span class="emphasis">start a private conversation</span> with someone you'll have to <span class="emphasis">open one</span>. You can do this by either <a href="#privateMessaging">messaging</a> or <a href="#privateCalling">calling</a> that person. After that's done you can always find that conversation back in your <span class="emphasis">message list</span>. To find your message list, click the <span class="emphasis">home</span> buttton. Your messages will be displayed in the "<span class="emphasis">direct messages</span>" tab.</p>
+            <img src="img/pms.png" class="col-lg-6 colFix leftResize bigSpace">
             <h5 id="privateMessaging">Messaging</h5>
+            <p class="col-lg-6 colFix">To send a message to someone you share a server with, go find that person in the <a href="#whereServers">members list</a> of that server. Right click their <span class="emphasis">icon</span> and click <span class="emphasis">message</span>. To send a <span class="emphasis">message to a friend</span>, go to your <a href="#whereFriends">friend list</a> and find that user. Next you can just click the <span class="emphasis">message icon</span> to the right of their profile. Both ways will open a <span class="emphasis">private message</span> in your <span class="emphasis">message list</span>.<br><br>If you can't find the user you're looking for, try entering their username in the <span class="emphasis">search bar</span> above your friends when you click the <span class="emphasis">home</span> button.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/privateMessage.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h5 id="privateCalling">Calling</h5>
+            <p class="col-lg-6 colFix">You can also call people by <span class="emphasis">right clicking</span> their profile picture and then selecting "<span class="emphasis">call</span>". However if you've already opened a <span class="emphasis">direct message</span> with that person, you can open that conversation and click on the <span class="emphasis">telephone icon</span> at the top right. This will start a <span class="emphasis">voice call</span> with that person.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/pmCall.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="privateStreaming">Streaming your screen / camera</h5>
+            <p class="col-lg-6 colFix">To stream your screen or camera privately, you first need to be inside a <a href="#privateCalling">voice call</a> with someone. After that's done, you can click on the <span class="emphasis">camera</span> or <span class="emphasis">screenshare</span> icons in your call. Sharing your camera is easy, just click on the "<span class="emphasis">turn on camera</span>" button and it's done. Sharing your screen however, can get a little tricky.<br><br> You get the <span class="emphasis">choice</span> what part of your screen you want to stream. When you click the "<span class="emphasis">share your screen</span>" button you'll see a <span class="emphasis">list of applications</span> to choose from. If you want to just show <span class="emphasis">one particular view</span> on something, this option is perfect and you can just select the window you wish to show. If however you want to stream <span class="emphasis">multiple different windows</span>, you want to go over to the tab "<span class="emphasis">screen</span>" and select one of your screens to stream. This will show that entire screen to your audience.<br><br> Once you've selected a screen or application you can choose which <span class="emphasis">resolution</span> your stream has to be and which <span class="emphasis">framerate</span> it has to have. When you're done click "<span class="emphasis">go live</span>" and your stream will start.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/screenshare.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="serverCommunication">Server communication</h5>
+            <p class="col-lg-12 colFix">If you want to communicate through a server, you'll first have to <a href="#joinServer">join one</a>. After that, you'll be able to communicate through different <a href="#textChannels">text channels</a> and <a href="#voiceChannels">voice channels</a>. If you have trouble figuring out what's where check out the <a href="#whatWhere">what's where</a> section.</p>
             <h5 id="textChannels">Text channels</h5>
+            <p class="col-lg-12 colFix">To the left you'll see all <a href="#whereChannels">text and voice channels</a> when you're inside a server. Text channels always have a leading <span class="emphasis">hashtag #</span>. By clicking on the text channels you can hop from channel to channel and view the content of it if your <a href="#roles">role has the permission</a> to do so. To the right in the <a href="#whereServers">members list</a> you'll see all the people who can read the messages in that channel.</p>
             <h5 id="voiceChannels">Voice channels</h5>
+            <p class="col-lg-6 colFix">Below the text channels you'll find the voice channels, they always have a <span class="emphasis">leading speaker 🔊 icon</span>. There can already be people inside of that channel, in that case you might want to watch out that you don't join a filled channel with your microphone blasting loud sounds. A good practice is to enter a channel <a href="#muteDeafen">muted</a> and unmute yourself when needed.<br><br>To <span class="emphasis">join</span> a channel, <span class="emphasis">click</span> on it. You'll see your <span class="emphasis">profile picture</span> in the voice channel. To <span class="emphasis">leave</span>, press the <span class="emphasis">disconnect</span> icon or switch to a different voice channel. You don't have to leave a channel to switch to another channel, just join the one you want to be in.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/voiceChannels.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="mentioning">Mentioning</h5>
+            <p class="col-lg-12 colFix">Sometimes you want to <span class="emphasis">target messages</span> to a person or specific people. This will only work when the people you are targeting have access to the <a href="#textChannels">text channel</a> you enter your mention in. When you mention someone or a group of people they will receive a <span class="emphasis">notification</span> of your message and the message gets highlighted in their message history. There are <span class="emphasis">2 types</span> of mentioning.<br><br>The first type are the mentions with a leading "<span class="emphasis">@</span>". Those can be used to target <span class="emphasis">one person</span>, <span class="emphasis">everyone</span> in the server or everyone in the server that <span class="emphasis">is online</span>. To target one person just enter "<span class="emphasis">@username</span>" and replace username with the desired user's username. To target everyone in the server enter "<span class="emphasis">@everyone</span>". To target everyone in the server that is online enter "<span class="emphasis">@here</span>". <br><br>The second type are the mentions with a leading "<span class="emphasis">#</span>". Those are used to target everyone that has access to a specific <a href="#textChannels">text channel</a>. For example you could enter "<span class="emphasis">#general</span>" to target all people that have access to the "general" channel.</p>
             <h5 id="publicStreaming">Streaming your screen / camera</h5>
+            <p class="col-lg-6 colFix">Sharing your screen or camera in a server is very similar to doing that privately, but the buttons are in a different place. To start, you'll have to be inside a <a href="#voiceChannels">voice channel</a>. After that's done, you can click on the <span class="emphasis">camera</span> or <span class="emphasis">screenshare</span> icons above your profile in the bottom left. Those buttons work the same way as in a private call. When you share your screen you'll see <span class="live">live</span> next to your profile name. Click <a href="#privateStreaming">here</a> if you want to take a look at how those buttons work!</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/screenshareServer.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="joiningStream">Joining a livestream</h5>
+            <p class="col-lg-6 colFix">Joining a livestream is very simple, <span class="emphasis">hover</span> over a person that is streaming, you can <span class="emphasis">see that they're streaming</span> when they have the <span class="live">live</span> indicator next to their profile name. Next just click "<span class="emphasis">Watch Stream</span>". You should be able to see their screen now.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/joinStream.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="muteDeafen">Muting / deafening</h5>
+            <p class="col-lg-6 colFix">To <span class="emphasis">mute yourself</span>, press the <span class="emphasis">microphone</span> 🎙 icon. To <span class="emphasis">deafen yourself</span>, press the <span class="emphasis">headset</span> 🎧 icon. Both are located at the <span class="emphasis">bottom left</span> above your profile. When you click them you'll see a red stripe across the icons. This means you are now deafened or muted, or both. To <span class="emphasis">unmute or undeafen</span> yourself, <span class="emphasis">click it again</span>.<br><br>Muting or deafening <span class="emphasis">other people</span> can be done in <span class="emphasis">2 ways</span>. The first is to only do that <span class="emphasis">for yourself</span>, that means that other people can <span class="emphasis">still hear them</span> but you won't. When you <span class="emphasis">right click</span> that person and press <span class="emphasis">mute</span>, you won't hear that person anymore. Until you click that box again, that person will remain muted for you, even the next day.<br><br>The second way is to <span class="emphasis">server mute or deafen</span> a person. This means this will work <span class="emphasis">across the whole server</span>, nobody in the server will hear them and you can also server deafen them so they will hear nobody in the server as well. To do this you'll also have to <span class="emphasis">right click</span> that person. If you have the <span class="emphasis">rights</span> to do so, you'll have a few <span class="emphasis">red lines of commands</span>. To server mute them, check the <span class="emphasis">red server mute box</span>. To server deafen them, check the <span class="emphasis">red server deafen box.</span></p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/muteDeafen.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="tricks">Messaging tricks</h5>
+            <p class="col-lg-12 colFix">Did you know you can use <span class="emphasis">4 different text styles</span>? These are Bold, Bold Italics, Italics, Strikethrough text, and Underline.<br><br>For <span class="emphasis">bold</span> Discord text, you just need to add two asterisks(**) to either side of the text.<br>Enter: <span class="emphasis">**Your chosen text**</span><br><br>For <span class="emphasis">italic</span> Discord text, you just need to add a single asterisk(*) or underscore(_) to either side of the text.<br>Enter: <span class="emphasis">*Your chosen text*</span>   or <span class="emphasis">_Your chosen text_</span><br><br>For <span class="emphasis">bold italic</span> Discord text, you just need to add three asterisks(***) to either side of the text.<br>Enter: <span class="emphasis">***Your chosen text***</span><br><br>To <span class="emphasis">underline</span> your Discord text, you just need to add two underscores(__) to either side of the text.<br>Enter: <span class="emphasis">__Your chosen text__</span><br><br>To <span class="emphasis">strikethrough</span> your Discord text, you just need to add two tildes(~~) to either side of the text.<br>Enter: <span class="emphasis">~~Your chosen text~~</span><br><br>Combine these in any way you like to spice up your discord text game!<br><br><br>Next, there's also some fun <span class="emphasis">commands</span> you can make use of! In the message input, type slash "<span class="emphasis">/</span>" to see a <span class="emphasis">list of commands</span>. They're pretty self explanatory, try some of them out. I'm sure you'll quickly find out what each of them does! Be <span class="emphasis">careful</span> with the "<span class="emphasis">/tts</span>" command though, this command stands for "<span class="emphasis">text to speech</span>". What this does is it will <span class="emphasis">read your next message out loud</span> to everyone in the server. Always be careful with stuff that reaches out to everybody!</p>
             <h5 id="emojis">Emojis</h5>
+            <p class="col-lg-6 colFix">There's <span class="emphasis">multiple ways</span> to add emojis to your message. First of all you can add emojis in the same way we've been familiar with for a long time. If you want a <span class="emphasis">smile</span>, you can type "<span class="emphasis">:-)</span>", if you want a <span class="emphasis">heart</span> you can type "<span class="emphasis"><3</span>", and so on. However there's a ton of emojis that you <span class="emphasis">can't make this way</span>. To add those there's two other ways to add them.<br><br>The first one is to <span class="emphasis">click on the emoji to the right of your message input</span>. To the right of the screen that opens you'll find the <span class="emphasis">different categories</span> of emojis you can find. If you click any of them they'll be added to your message.<br><br>The second way is to input the <span class="emphasis">emoji code</span>, but you'll have to know what it is for each emoji. However, those are pretty self explanatory. For example, if you want the "<span class="emphasis">tired face</span>" emoji, input "<span class="emphasis">:tired_face:</span>" in your message.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/emoji.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="code">Code in a message</h5>
+            <p class="col-lg-6 colFix">To add code to your message, add <span class="emphasis">3 opening and closing backticks</span>. Next to the opening backticks you can define <span class="emphasis">which code language</span> you're using. This is an example:<br><br>```javascript<br>window.alert("skeet");<br>window.alert("yeet");<br>```</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/code.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="attachments">Attachments</h5>
+            <p class="col-lg-6 colFix">Press the <span class="emphasis">plus "+" icon</span> to the left of your message input to add an attachment. Next, <span class="emphasis">navigate to the file</span> you want to upload and select it. After that, you can choose to <span class="emphasis">add a comment or not</span>. If you're ready, press "<span class="emphasis">upload</span>" and you'll have sent your attachment. The <span class="emphasis">maximum file size</span> you can upload is limited though, so it's mainly used to share images or small files. You can also <span class="emphasis">drag and drop</span> any file or image that you want to add as an attachment into your message.</p>
+            <div class="col-lg-6 colFix bigSpace">
+                <video width="100%" height="100%"  autoplay loop>
+                    <source src="img/attachments.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h5 id="pinning">Pinning</h5>
             <h5 id="searching">Searching</h5>
             <h5 id="inbox">Inbox</h5>
@@ -514,6 +600,11 @@
                     <li>You can <a href="#groupingServer">make folders</a> and put your favourite servers together, your gaming servers, your work-related servers, etc. Just drag the server over another server / folder you want to group it with.</li>
                 </ul>
                 <hr>
+                <li class="question">When I livestream, my audience doesn't see my entire screen, just one window.</li>
+                <ul class="smallList answer">
+                    <li>This is because you're streaming an application, not your screen. Right before you click on "go live" you should go over to the tab "screens" and select the screen you want to stream instead of a window. To find out more, click <a href="#publicStreaming">here</a>.</li>
+                </ul>
+                <hr>
             </ul>
         </section>
         <!-- END FAQ --------------------------------------------------------------------------->
@@ -525,7 +616,10 @@
 </div>
 
     <a id="top" href="#overview">&uarr;</a>
-
+    <script>setTimeout(function () {
+        document.getElementById('overlay').style.display = "none";
+    }, 4000);
+        </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
